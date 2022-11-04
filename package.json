@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "difference calculator",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
@@ -21,6 +21,13 @@
   "type": "module",
   "homepage": "https://github.com/Artoym1234/frontend-project-46#readme",
   "devDependencies": {
-    "commander": "^9.4.1"
+    "eslint": "^8.26.0",
+    "eslint-config-air-base": "^0.3.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "lodash": "^4.17.21"
   }
 }
