@@ -1,5 +1,14 @@
-lint:
+install: 
+	npm ci
+
+lint: 
 	npx eslint .
-	
-test:
+
+test: 
 	npm test
+
+test-coverage:
+	npm test -- --coverage --coverageProvider=v8
+	
+publish:
+	npm publish
