@@ -4,17 +4,17 @@ install: install-deps
 install-deps: 
 	npm ci
 
-run:
-	./bin/gendiff.js 
-
 lint: 
 	npx eslint .
 
 test: 
 	npm test
 
+gendiff:
+	bin/gendiff.js
+
 test-coverage:
 	npm test -- --coverage --coverageProvider=v8
 
 publish:
-	npm publish
+	npm publish --dry-run
