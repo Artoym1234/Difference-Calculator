@@ -10,7 +10,7 @@
     "pre-push": "make lint"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=17"
   },
   "scripts": {
     "test": "npx jest --bail"
