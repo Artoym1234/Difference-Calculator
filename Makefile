@@ -1,8 +1,11 @@
-install: 
+install: install-deps
+	npx simple-git-hooks
+
+install-deps: 
 	npm ci
 
 run:
-	bin/gendiff.js 10
+	./bin/gendiff.js 
 
 lint: 
 	npx eslint .

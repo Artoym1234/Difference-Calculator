@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "difference calculator",
+  "description": "compare",
   "main": "src/index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
@@ -11,6 +11,9 @@
   },
   "engines": {
     "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx jest --bail"
   },
    "repository": {
     "type": "git",
