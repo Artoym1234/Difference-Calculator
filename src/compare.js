@@ -3,36 +3,27 @@ import _ from 'lodash';
 const compare = (obj1, obj2) => {
   const keys = _.union(_.keys(obj1), _.keys(obj2));
   const sortKeys = _.sortBy(keys);
-  let result = '{';
-  sortKeys.map((key) => {
-    const hasOwn1 = Object.hasOwn(obj1, key);
-    const value1 = hasOwn1 ? obj1[key] : false;
-    const hasOwn2 = Object.hasOwn(obj2, key);
-    const value2 = hasOwn2 ? obj2[key] : false;
-    switch (true) {
-      case (hasOwn1 && hasOwn2 && (value1 === value2)): {
-        result += `\n  ${key}: ${value1}`;
-        break;
-      }
-      case (hasOwn1 && !hasOwn2): {
-        result += `\n- ${key}: ${value1}`;
-        break;
-      }
-      case (!hasOwn1 && hasOwn2): {
-        result += `\n+ ${key}: ${value2}`;
-        break;
-      }
-      case (hasOwn1 && hasOwn2 && (value1 !== value2)): {
-        result += `\n- ${key}: ${value1}`;
-        result += `\n+ ${key}: ${value2}`;
-        break;
-      }
-      default: {
-        break;
+  const result = sortKeys.map((key) => {
+    if (_.isObject(obj1[key]) && _.isObject(obj2[key])) {
+      return { name: key, value: compare(obj1[key], obj2[key]), type: 'nested' };
+    }
+    if (!_.has(obj2, key)) {
+      return { name: key, value: obj1[key], type: 'deleted' };
+    }
+    if (!_.has(obj1, key)) {
+      return { name: key, value: obj2[key], type: 'added' };
+    }
+    if (_.has(obj1, key) && _.has(obj2, key)) {
+      if (obj1[key] !== obj2[key]) {
+        return {
+          name: key, value1: obj1[key], value2: obj2[key], type: 'changed',
+        };
       }
     }
-    return false;
+    return { name: key, value: obj1[key], type: 'unchanged' };
   });
-  return `${result}\n}`;
+  return result;
 };
+// const diffTree = (obj1, obj2) => ({ type: 'root', children: compare(obj1, obj2) });
+// export default diffTree;
 export default compare;

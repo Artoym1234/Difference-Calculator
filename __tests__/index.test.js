@@ -13,10 +13,10 @@ const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8'
 
 const tests = [
   {
-    file1: 'file1.json', file2: 'file2.json', formatter: 'stylish', output: 'resultJson.txt',
+    file1: 'file1.json', file2: 'file2.json', formatter: 'stylish', output: 'stylishOutput.txt',
   },
   {
-    file1: 'file1.yaml', file2: 'file2.yaml', formatter: 'stylish', output: 'resultJson.txt',
+    file1: 'file1.yaml', file2: 'file2.yaml', formatter: 'stylish', output: 'stylishOutput.txt',
   },
 ];
 

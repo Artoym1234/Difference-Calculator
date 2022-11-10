@@ -6,6 +6,8 @@
 
 ### Demonstration 
 пример для файлов JSON:
-[![asciicast](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I.svg)](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I)]
+[![asciicast](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I.svg)](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I)
 пример для файлов YAML:
-[![asciicast](https://asciinema.org/a/CpDvBOl2HLzt7qjOpkg5nAc67.svg)](https://asciinema.org/a/CpDvBOl2HLzt7qjOpkg5nAc67)]
+[![asciicast](https://asciinema.org/a/CpDvBOl2HLzt7qjOpkg5nAc67.svg)](https://asciinema.org/a/CpDvBOl2HLzt7qjOpkg5nAc67)
+пример для файлов c вложенной структурой:
+[![asciicast](https://asciinema.org/a/qe7Hr382C0SGsl1nXxZy4TbOg.svg)](https://asciinema.org/a/qe7Hr382C0SGsl1nXxZy4TbOg)
