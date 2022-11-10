@@ -8,7 +8,6 @@ import genDiff from '../src/index.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
-
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
 
 const tests = [
@@ -20,7 +19,7 @@ const tests = [
   },
 ];
 
-test.each(tests)('gendiff stylish, plain and json tests', ({
+test.each(tests)('gendiff stylish', ({
   file1, file2, formatter, output,
 }) => {
   const filepath1 = getFixturePath(file1);
