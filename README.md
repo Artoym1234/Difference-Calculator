@@ -11,3 +11,7 @@
 [![asciicast](https://asciinema.org/a/CpDvBOl2HLzt7qjOpkg5nAc67.svg)](https://asciinema.org/a/CpDvBOl2HLzt7qjOpkg5nAc67)
 пример для файлов c вложенной структурой:
 [![asciicast](https://asciinema.org/a/qe7Hr382C0SGsl1nXxZy4TbOg.svg)](https://asciinema.org/a/qe7Hr382C0SGsl1nXxZy4TbOg)
+пример вывода плоского формата:
+[![asciicast](https://asciinema.org/a/rBmM2RAiWiL71esVeDLem88U6.svg)](https://asciinema.org/a/rBmM2RAiWiL71esVeDLem88U6)
+
+
