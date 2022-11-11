@@ -13,5 +13,7 @@
 [![asciicast](https://asciinema.org/a/qe7Hr382C0SGsl1nXxZy4TbOg.svg)](https://asciinema.org/a/qe7Hr382C0SGsl1nXxZy4TbOg)
 пример вывода плоского формата:
 [![asciicast](https://asciinema.org/a/rBmM2RAiWiL71esVeDLem88U6.svg)](https://asciinema.org/a/rBmM2RAiWiL71esVeDLem88U6)
+пример вывода в JSON формате:
+[![asciicast](https://asciinema.org/a/7luVU9P2lkOcHA3fYBdLplPoN.svg)](https://asciinema.org/a/7luVU9P2lkOcHA3fYBdLplPoN)
 
-
+https://asciinema.org/a/7luVU9P2lkOcHA3fYBdLplPoN
