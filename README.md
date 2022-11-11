@@ -4,6 +4,32 @@
 <a href="https://codeclimate.com/github/Artoym1234/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/879cd59e98497d8d745e/maintainability" /></a>
 <a href="https://codeclimate.com/github/Artoym1234/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/879cd59e98497d8d745e/test_coverage" /></a>
 
+## Описание
+Вычислитель отличий - CLI программа, которая показывает различия между двумя файлами.
+Поддерживаемые форматы файлов: JSON, YAML, YML.
+
+### Установка
+* Клонировать репозиторий: `https://github.com/Artoym1234/frontend-project-46.git`
+```
+git clone
+```
+* Установка 
+```
+make install
+```
+```
+sudo npm link
+```
+
+### Запуск тестов
+```
+make test
+```
+### Как использовать использовать
+Можно выводить изменения в трёх форматах: stylish (default), plain и json.
+```
+gendiff [options] <filepath1> <filepath2>
+```
 ### Demonstration 
 пример для файлов JSON:
 [![asciicast](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I.svg)](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I)
