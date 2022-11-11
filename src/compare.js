@@ -24,6 +24,4 @@ const compare = (obj1, obj2) => {
   });
   return result;
 };
-// const diffTree = (obj1, obj2) => ({ type: 'root', children: compare(obj1, obj2) });
-// export default diffTree;
 export default compare;
