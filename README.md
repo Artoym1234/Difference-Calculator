@@ -16,4 +16,3 @@
 пример вывода в JSON формате:
 [![asciicast](https://asciinema.org/a/7luVU9P2lkOcHA3fYBdLplPoN.svg)](https://asciinema.org/a/7luVU9P2lkOcHA3fYBdLplPoN)
 
-https://asciinema.org/a/7luVU9P2lkOcHA3fYBdLplPoN
