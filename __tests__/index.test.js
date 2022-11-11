@@ -23,6 +23,12 @@ const tests = [
   {
     file1: 'file1.yaml', file2: 'file2.yaml', formatter: 'plain', output: 'plainOutput.txt',
   },
+  {
+    file1: 'file1.json', file2: 'file2.json', formatter: 'json', output: 'jsonOutput.txt',
+  },
+  {
+    file1: 'file1.yaml', file2: 'file2.yaml', formatter: 'json', output: 'jsonOutput.txt',
+  },
 ];
 
 test.each(tests)('gendiff stylish, plain', ({
