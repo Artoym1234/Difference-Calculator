@@ -8,6 +8,9 @@
 Вычислитель отличий - CLI программа, которая показывает различия между двумя файлами.
 Поддерживаемые форматы файлов: JSON, YAML, YML.
 
+## Минимальные системные требования:
+Node.js 13.2.0
+
 ### Установка
 * Клонировать репозиторий: `https://github.com/Artoym1234/frontend-project-46.git`
 ```
@@ -30,7 +33,7 @@ make test
 ```
 gendiff [options] <filepath1> <filepath2>
 ```
-### Demonstration 
+### Демонстрация 
 пример для файлов JSON:
 [![asciicast](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I.svg)](https://asciinema.org/a/sYOlHoelItsfHk314iXyqvD4I)
 пример для файлов YAML:
