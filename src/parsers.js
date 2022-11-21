@@ -1,7 +1,7 @@
 import { load } from 'js-yaml';
 
-const getParser = (data, format) => {
-  switch (format) {
+const parse = (data, nameFormat) => {
+  switch (nameFormat) {
     case 'json':
       return JSON.parse(data);
     case 'yaml':
@@ -9,8 +9,8 @@ const getParser = (data, format) => {
     case 'yml':
       return load(data);
     default:
-      throw new Error('Unknown fornmat. You can use JSON or YAML formats.');
+      throw new Error(`'Unknown fornmat: ${nameFormat}. You can use JSON or YAML formats.'`);
   }
 };
 
-export default getParser;
+export default parse;

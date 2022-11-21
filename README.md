@@ -4,11 +4,11 @@
 <a href="https://codeclimate.com/github/Artoym1234/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/879cd59e98497d8d745e/maintainability" /></a>
 <a href="https://codeclimate.com/github/Artoym1234/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/879cd59e98497d8d745e/test_coverage" /></a>
 
-## Описание
+### Описание
 Вычислитель отличий - CLI программа, которая показывает различия между двумя файлами.
 Поддерживаемые форматы файлов: JSON, YAML, YML.
 
-## Минимальные системные требования:
+### Минимальные системные требования:
 Node.js 13.2.0
 
 ### Установка
@@ -16,7 +16,7 @@ Node.js 13.2.0
 ```
 git clone
 ```
-* Установка 
+* Установить 
 ```
 make install
 ```
