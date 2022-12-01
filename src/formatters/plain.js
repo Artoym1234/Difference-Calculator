@@ -4,7 +4,10 @@ const stringify = (data) => {
   if (_.isObject(data)) {
     return '[complex value]';
   }
-  return _.isString(data) ? `'${data}'` : data;
+  if (typeof data === 'string') {
+    return `'${data}'`;
+  }
+  return String(data);
 };
 
 const iter = (tree, parent) => tree.flatMap((node) => {
